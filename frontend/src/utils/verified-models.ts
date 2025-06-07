@@ -11,6 +11,7 @@ export const VERIFIED_MODELS = [
   "deepseek-chat",
 ];
 
+// very very dumb solution but still a pontental one at that
 // LiteLLM does not return OpenAI models with the provider, so we list them here to set them ourselves for consistency
 // (e.g., they return `gpt-4o` instead of `openai/gpt-4o`)
 export const VERIFIED_OPENAI_MODELS = [
@@ -27,6 +28,21 @@ export const VERIFIED_OPENAI_MODELS = [
   "o3-mini-2025-01-31",
   "o4-mini",
   "o4-mini-2025-04-16",
+
+  // Capitalized versions
+  "GPT-4O",
+  "GPT-4O-MINI",
+  "GPT-4-TURBO",
+  "GPT-4",
+  "GPT-4-32K",
+  "O1-MINI",
+  "O1",
+  "O3",
+  "O3-2025-04-16",
+  "O3-MINI",
+  "O3-MINI-2025-01-31",
+  "O4-MINI",
+  "O4-MINI-2025-04-16",
 ];
 
 // LiteLLM does not return the compatible Anthropic models with the provider, so we list them here to set them ourselves

@@ -4,6 +4,7 @@ const extractBasicFormData = (formData: FormData) => {
   const provider = formData.get("llm-provider-input")?.toString();
   const model = formData.get("llm-model-input")?.toString();
 
+ // this is where the real solution is located
   const LLM_MODEL = `${provider}/${model}`.toLowerCase();
   const LLM_API_KEY = formData.get("llm-api-key-input")?.toString();
   const AGENT = formData.get("agent")?.toString();
